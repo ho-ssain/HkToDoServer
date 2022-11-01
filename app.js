@@ -16,6 +16,9 @@ app.use(
   })
 );
 app.use(cors());
+app.get("/", (req, res) => {
+  res.send("Server is Working!!!");
+});
 
 app.use("/api/v1", User);
 
