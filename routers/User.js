@@ -4,7 +4,7 @@ import { isAuthenticated } from "../middlewares/auth.js";
 
 const router = express.Router();
 
-//1.  http://localhost:4000/api/v1/register
+//1.  /api/v1/register
 router.route("/register").post(register);
 
 //2.  http://localhost:4000/api/v1/verify
